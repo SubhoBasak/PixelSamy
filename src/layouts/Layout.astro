@@ -1,6 +1,6 @@
 ---
 import AppFooter from "../components/AppFooter.astro";
-import AppHeader from "../components/AppHeader.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <!DOCTYPE html>
@@ -15,8 +15,8 @@ import AppHeader from "../components/AppHeader.astro";
 
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
     </head>
-    <body class="bg-white dark:bg-gray-900">
-        <AppHeader />
+    <body class="flex flex-col items-center bg-white dark:bg-gray-900">
+        <Navbar />
         <slot />
         <AppFooter />
     </body>
