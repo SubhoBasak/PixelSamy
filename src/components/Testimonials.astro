@@ -3,79 +3,50 @@ import Container from "./Container.astro"
 
 ---
 
-<div class="text-gray-600 dark:text-gray-300" id="reviews">
+<div class="flex flex-col items-center py-16">
+  <h2 class="text-4xl font-light mb-6">Membership benefits</h2>
+  <p class="font-light text-lg mb-4">Perks you will love!</p>
+  <a class="bg-black text-white rounded-lg px-8 py-3" style="box-shadow: 4px 4px 1px 1px #2224">See plans</a>
+</div>
+<div class="w-full relative isolate">
+  <div class="min-w-[400px] min-h-[200px] absolute top-0 left-0 bg-neutral-100 z-0"></div>
   <Container>
-    <div class="mb-20 space-y-4 px-6 md:px-0">
-      <h2 class="text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
-        We have some fans.
-      </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24 py-12">
+      <div class="flex flex-col items-center">
+        <h3 class="font-bold text-lg mb-4 z-10">Fixed Montyhly rate</h3>
+        <p class="w-4/5 text-center font-light leading-6 text-lg z-10">Add as many design requests to your board as you'd like.</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <h3 class="font-bold text-lg mb-4">Royalty free msuic</h3>
+        <p class="w-4/5 text-center font-light leading-6 text-lg">Get your design one at a time in just a few days on average.</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <h3 class="font-bold text-lg mb-4">Premium assets</h3>
+        <p class="w-4/5 text-center font-light leading-6 text-lg">No surprises here! Pay the same fixed price each month.</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <h3 class="font-bold text-lg mb-4">High quality</h3>
+        <p class="w-4/5 text-center font-light leading-6 text-lg">Insane design quality at your fingertips whenever you need it.</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <h3 class="font-bold text-lg mb-4">Unlimted storage for final videos</h3>
+        <p class="w-4/5 text-center font-light leading-6 text-lg">Scale up or down as needed, and pause or cancel at anytime.</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <h3 class="font-bold text-lg mb-4">Dedicated slack channel</h3>
+        <p class="w-4/5 text-center font-light leading-6 text-lg">Each of your designs is made especially for you and is 100% yours.</p>
+      </div>
     </div>
   </Container>
-  <div class="bg-neutral-100">
-    <Container>
-      <div class="md:columns-2 lg:columns-3 gap-8 space-y-8">
-      <div class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
-        <div class="flex gap-4">
-          <img class="w-12 h-12 rounded-full" src="./images/avatars/avatar.webp" alt="user avatar" width="400" height="400" loading="lazy">
-          <div>
-            <h6 class="text-lg font-medium text-gray-700 dark:text-white">Daniella Doe</h6>
-            <p class="text-sm text-gray-500 dark:text-gray-300">Mobile dev</p>
-          </div>
-        </div>
-        <p class="mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid quo eum quae quos illo earum ipsa doloribus nostrum minus libero aspernatur laborum cum, a suscipit, ratione ea totam ullam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
+</div>
+<div class="w-full relative pt-24">
+  <div class="top-0 left-0 min-w-[400px] min-h-[120px] absolute bg-neutral-100"></div>
+  <Container>
+    <div class="md:col-span-4 bg-orange-50 flex flex-col items-center p-8 relative isolate">
+        <div class="absolute w-1/2 h-full min-h-full min-w-[50%] top-0 left-0 bottom-0 bg-orange-100 z-0"></div>
+        <i class="fa-solid fa-quote-left text-5xl text-orange-500 mt-8 z-[1]"></i>
+        <p class="text-center text-2xl font-thin text-neutral-700 my-4 z-[1]">Designjoy shows that they know the art of subtlety.</p>
+        <p class="text-2xl font-bold mb-8 z-[1]">Company</p>
       </div>
-      <div class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
-        <div class="flex gap-4">
-          <img class="w-12 h-12 rounded-full" src="./images/avatars/avatar-1.webp" alt="user avatar" width="200" height="200" loading="lazy">
-          <div>
-            <h6 class="text-lg font-medium text-gray-700 dark:text-white">Jane doe</h6>
-            <p class="text-sm text-gray-500 dark:text-gray-300">Marketing</p>
-          </div>
-        </div>
-        <p class="mt-8"> Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-      </div>
-      <div class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
-        <div class="flex gap-4">
-          <img class="w-12 h-12 rounded-full" src="./images/avatars/avatar-2.webp" alt="user avatar" width="200" height="200" loading="lazy">
-          <div>
-            <h6 class="text-lg font-medium text-gray-700 dark:text-white">Yanick Doe</h6>
-            <p class="text-sm text-gray-500 dark:text-gray-300">Developer</p>
-          </div>
-        </div>
-        <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-      </div>
-      <div class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
-        <div class="flex gap-4">
-          <img class="w-12 h-12 rounded-full" src="./images/avatars/avatar-3.webp" alt="user avatar" width="200" height="200" loading="lazy">
-          <div>
-            <h6 class="text-lg font-medium text-gray-700 dark:text-white">Jane Doe</h6>
-            <p class="text-sm text-gray-500 dark:text-gray-300">Mobile dev</p>
-          </div>
-        </div>
-        <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-      </div>
-      <div class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
-        <div class="flex gap-4">
-          <img class="w-12 h-12 rounded-full" src="./images/avatars/avatar-4.webp" alt="user avatar" width="200" height="200" loading="lazy">
-          <div>
-            <h6 class="text-lg font-medium text-gray-700 dark:text-white">Andy Doe</h6>
-            <p class="text-sm text-gray-500 dark:text-gray-300">Manager</p>
-          </div>
-        </div>
-        <p class="mt-8"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-      </div>
-      <div class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
-        <div class="flex gap-4">
-          <img class="w-12 h-12 rounded-full" src="./images/avatars/avatar-2.webp" alt="user avatar" width="400" height="400" loading="lazy">
-          <div>
-            <h6 class="text-lg font-medium text-gray-700 dark:text-white">Yanndy Doe</h6>
-            <p class="text-sm text-gray-500 dark:text-gray-300">Mobile dev</p>
-          </div>
-        </div>
-        <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-      </div>
-
-    </div>
-    </Container>
-  </div>
+  </Container>
 </div>

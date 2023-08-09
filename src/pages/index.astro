@@ -11,14 +11,17 @@ import Clients from '../components/Clients.astro';
 ---
 
 <Layout title="Welcome to Astrolus.">
-	<main class="mb-40">
+	<main>
 		<HeroSection/>
 		<Clients />
 		<Features/>
+		<div class="w-full p-6 flex justify-start h-[80vh] bg-green-50">
+			<div class="w-96 min-w-[384px] bg-gray-200 min-h-full"></div>
+		</div>
 		<Stats/>
 		<Testimonials/>
 		<CallToAction/>
 		<!-- <Blog/> -->
-		<Faq />
+		<!-- <Faq /> -->
 	</main>
 </Layout>

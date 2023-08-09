@@ -1,81 +1,130 @@
 ---
-import Container from "./Container.astro"
-
+import Container from "./Container.astro";
+import Stats from "./Stats.astro";
 ---
 
-<div class="relative py-32">
-  <div aria-hidden="true" class="absolute top-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
-    <div class="blur-[106px] h-56 bg-gradient-to-br from-orange-300 to-orange-400"></div>
-    <div class="blur-[106px] h-32 bg-gradient-to-r from-green-200 to-green-100"></div>
+<div class="flex flex-col items-center bg-black text-white pt-16 pb-32 relative overflow-hidden isolate">
+  <div class="absolute top-5 -right-10 min-w-[450px] min-h-[80px] bg-orange-700 blur-3xl z-0"></div>
+  <div class="absolute bottom-5 -left-10 min-w-[450px] min-h-[80px] bg-green-700 blur-3xl z-0"></div>
+  <h2 class="text-4xl font-light mb-6">Another win!</h2>
+  <p class="font-light text-lg mb-4">Award winning videos, and nothing less.</p>
+  <a class="bg-orange-500 text-white rounded-lg px-8 py-3 mb-16">View recent work</a>
+  <div class="w-full mx-auto flex justify-end p-8">
+    <div class="col-span-3 bg-neutral-100 rounded-lg w-full max-w-[500px] aspect-square z-10"></div>
+  </div>
+</div>
+
+<div class="bg-orange-100 min-h-[80vh] flex flex-col items-center">
+  <h2 class="my-auto font-bold text-5xl">How does it work?</h2>
+  <Container>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div>
+        <div class="flex items-center">
+          <span class="text-4xl font-bold mr-2">1</span>
+          <h3 class="font-bold text-lg">Select your plan</h3>
+        </div>
+        <p class="text-gray-700 font-light mb-24">Choose a creative from our<br />
+          marketplace, or pick the monthly<br />
+          plan that suits your business needs.</p>
+      </div>
+      <div>
+        <div class="flex items-center">
+          <span class="text-4xl font-bold mr-2">2</span>
+          <h3 class="font-bold text-lg">Describe your project</h3>
+        </div>
+        <p class="text-gray-700 font-light mb-24">Use our brief form to describe your<br />
+          creative needs. Add attachments,<br />
+          elements, and brand guidelines in a
+          snap.</p>
+      </div>
+      <div>
+        <div class="flex items-center">
+          <span class="text-4xl font-bold mr-2">3</span>
+          <h3 class="font-bold text-lg">Get results</h3>
+        </div>
+        <p class="text-gray-700 font-light mb-24">Receive designs in 1-2 days.<br />
+          Collaborate with your Penji pros to<br />
+          revise until they're just right.</p>
+      </div>
+    </div>
+  </Container>
+</div>
+
+<Stats />
+
+<div class="w-full bg-orange-50 relative p-12 isolate">
+  <h2 class="font-thin text-5xl text-center mb-6">Editing on Subscription!</h2>
+  <p class="text-center text-lg font-light mb-16">Choose a plan that's right for you.</p>
+  <div class="z-[-1] min-w-[400px] min-h-[300px] max-w-[300px] max-h-[200px] bg-orange-100 absolute top-0 left-0">
   </div>
   <Container>
-    <div class="relative">
-      <div class="flex items-center justify-center -space-x-2">
-        <img
-          loading="lazy"
-          width="400"
-          height="400"
-          src="./images/avatars/avatar.webp"
-          alt="member photo"
-          class="h-8 w-8 rounded-full object-cover"
-        />
-        <img
-          loading="lazy"
-          width="200"
-          height="200"
-          src="./images/avatars/avatar-2.webp"
-          alt="member photo"
-          class="h-12 w-12 rounded-full object-cover"
-        />
-        <img
-          loading="lazy"
-          width="200"
-          height="200"
-          src="./images/avatars/avatar-3.webp"
-          alt="member photo"
-          class="z-10 h-16 w-16 rounded-full object-cover"
-        />
-        <img
-          loading="lazy"
-          width="200"
-          height="200"
-          src="./images/avatars/avatar-4.webp"
-          alt="member photo"
-          class="relative h-12 w-12 rounded-full object-cover"
-        />
-        <img
-          loading="lazy"
-          width="200"
-          height="200"
-          src="./images/avatars/avatar-1.webp"
-          alt="member photo"
-          class="h-8 w-8 rounded-full object-cover"
-        />
-      </div>
-      <div class="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
-        <h1 class="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">Get Started now</h1>
-        <p class="text-center text-xl text-gray-600 dark:text-gray-300">
-          Be part of millions people around the world using tailus in modern User Interfaces.
-        </p>
-        <div class="flex flex-wrap justify-center gap-6">
-          <a
-              href="#"
-              class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-orange-500 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-            >
-              <span class="relative text-base font-semibold text-white dark:text-dark"
-                >Contact Us</span
-              >
-            </a>
-            <a
-              href="#"
-              class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-orange-100 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
-            >
-              <span
-                class="relative text-base font-semibold text-orange-500"
-                >More about</span
-              >
-          </a>
+    <div class="bg-white grid grid-cols-1 lg:grid-cols-3 divide-x divide-orange-100 z-10">
+      <div class="flex flex-col bg-neutral-50">
+        <div class="flex flex-col p-8 h-96">
+          <h3 class="text-2xl font-thin text-gray-600 mb-4">Standard</h3>
+          <p class="text-lg font-light mb-16">One request at a time. Pause or cancel anytime.</p>
+          <p class="text-3xl font-thin">100min/month</p>
+          <p class="text-sm font-thin text-gray-500 mb-12">At $5.9/min</p>
+          <a href="#" class="rounded-md bg-black px-8 text-center py-4 text-white font-semibold text-sm" style="box-shadow: 4px 4px 1px 1px #2224">
+                      Book a Call!
+                    </a>
         </div>
+        <div class="w-full h-12 bg-white border-b border-orange-100"></div>
+        <div class="h-80 bg-neutral-50 flex flex-col p-8">
+          <h4 class="font-medium text-black mb-3">What's included:</h4>
+          <ul class="ml-3 flex flex-col space-y-2 font-light text-neutral-600">
+            <li>One request at a time</li>
+            <li>Average 48 hour delivery</li>
+            <li>Unlimited brands</li>
+            <li>Unlimited users</li>
+            <li>Unlimited assets </li>
+            <li>Easy credit-card payments</li>
+            <li>Pause or cancel anytime</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col bg-neutral-50">
+        <div class="flex flex-col p-8 h-96">
+          <h3 class="text-2xl font-thin text-gray-600 mb-4">Pro</h3>
+          <p class="text-lg font-light mb-16">Double the requests. Pause or cancel anytime.</p>
+          <p class="text-3xl font-thin">250min/month</p>
+          <p class="text-sm font-thin text-gray-500 mb-12">At $6.5/min</p>
+          <a href="#" class="rounded-md bg-black px-8 text-center py-4 text-white font-semibold text-sm" style="box-shadow: 4px 4px 1px 1px #2224">
+                      Book a Call!
+                    </a>
+        </div>
+        <div class="w-full h-12 bg-white border-b border-orange-100"></div>
+        <div class="h-80 bg-neutral-50 flex flex-col p-8">
+          <h4 class="font-medium text-black mb-3">What's included:</h4>
+          <ul class="ml-3 flex flex-col space-y-2 font-light text-neutral-600">
+            <li><strong class="text-neutral-800 font-medium">Two request at a time</strong></li>
+            <li>Average 48 hour delivery</li>
+            <li>Unlimited brands</li>
+            <li>Unlimited users</li>
+            <li>Unlimited stock photos via Shutterstock</li>
+            <li>Easy credit-card payments</li>
+            <li>Pause or cancel anytime</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col bg-neutral-50">
+        <div class="flex flex-col items-center p-8 h-96">
+          <img src="./images/editor.png" width="100" class="mb-8" />
+          <h3 class="w-full text-2xl font-thin text-gray-600 text-left mb-4">Want a custom minutes quote?</h3>
+          <p class="mb-8 font-light">Learn more about how DesignJoy works and how it can help you.</p>
+          <p class="font-medium w-full text-left mb-8">Book a call</p>
+          <hr class="border-black w-full"/>
+        </div>
+        <div class="w-full h-12 bg-white border-b border-white"></div>
+        <div class="h-80 bg-white flex flex-col p-8"></div>
+      </div>
+      <div class="col-span-full bg-black p-12 flex flex-col items-center">
+        <span class="bg-yellow-400 text-xs px-3 py-1 rounded-xl font-medium mb-6">
+          ADD-ON
+        </span>
+        <p class="text-2xl font-thin text-white mb-3">Want a combined pack of Short + Long form?</p>
+        <span class="text-sm text-white mb-8">Let's talk</span>
+        <p class="text-xl font-thin text-white">Book a Call</p>
       </div>
     </div>
   </Container>
