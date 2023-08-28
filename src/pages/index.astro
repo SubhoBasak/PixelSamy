@@ -1,10 +1,10 @@
 ---
-import Stats from '../components/Stats.astro';
+import RecentWork from '../components/RecentWork.astro';
 import Features from '../components/Features.astro';
 import HeroSection from '../components/HeroSection.astro';
 import Layout from '../layouts/Layout.astro';
-import Testimonials from '../components/Testimonials.astro';
-import CallToAction from '../components/CallToAction.astro';
+import MembershipBenefits from '../components/MembershipBenefits.astro';
+import AnotherWin from '../components/AnotherWin.astro';
 import Blog from '../components/Blog.astro';
 import Faq from '../components/Faq.astro';
 import Clients from '../components/Clients.astro';
@@ -18,10 +18,19 @@ import Clients from '../components/Clients.astro';
 		<div class="w-full p-6 flex justify-start h-[80vh] bg-green-50">
 			<div class="w-96 min-w-[384px] bg-gray-200 min-h-full"></div>
 		</div>
-		<Stats/>
-		<Testimonials/>
-		<CallToAction/>
+		<RecentWork/>
+		<MembershipBenefits/>
+
+		<!--
+		* another win
+		* how does it work
+		* Recent Work
+		* Subscription -->
+		<AnotherWin/>
+
+
 		<!-- <Blog/> -->
 		<!-- <Faq /> -->
 	</main>
 </Layout>
+<script is:inline src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
